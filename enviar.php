@@ -1,8 +1,12 @@
 <?php
   //Variáveis
   $nome = $_POST['nome'];
+  $telefone = $_POST['phone'];
+  $peaple = $_POST['peaple'];
+  $origin = $_POST['origin'];
+  $destiny = $_POST['destiny'];
+  $datatravel = $_POST['datatravel'];
   $email = $_POST['email'];
-  $mensagem = $_POST['mensagem'];
   $data_envio = date('d/m/Y');
   $hora_envio = date('H:i:s');
 
@@ -11,7 +15,10 @@
     <html>
       <p><b>Nome: </b>$nome</p>
       <p><b>E-mail: </b>$email</p>
-      <p><b>Mensagem: </b>$mensagem</p>
+      <p><b>Telefone: </b>$phone</p>
+      <p><b>QUantidade de Pessoas: </b>$peaple</p>
+      <p><b>Origem: </b>$origin</p>
+      <p><b>Destino: </b>$destiny</p>
       <p>Este e-mail foi enviado em <b>$data_envio</b> às <b>$hora_envio</b></p>
     </html>
   ";
